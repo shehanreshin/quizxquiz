@@ -1,9 +1,6 @@
-application:
-  local-ip: localhost
-
 spring:
   datasource:
-    url: jdbc:mysql:\\${local-ip}:3306\quizxquiz
+    url: jdbc:mysql://localhost:3306/quizxquiz
     username: root
     password: thisisnotasecurepassword
   jpa:

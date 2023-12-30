@@ -1,5 +1,9 @@
 package edu.personal.quizxquiz.service;
 
+import edu.personal.quizxquiz.entity.Question;
+
+import java.util.List;
+
 public interface QuestionService {
-    String getAllQuestions();
+    List<Question> getAllQuestions();
 }
