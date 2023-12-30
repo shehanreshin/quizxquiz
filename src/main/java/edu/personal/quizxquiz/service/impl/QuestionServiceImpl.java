@@ -4,6 +4,8 @@ import edu.personal.quizxquiz.dao.QuestionDao;
 import edu.personal.quizxquiz.entity.Question;
 import edu.personal.quizxquiz.service.QuestionService;
 import org.springframework.beans.factory.annotation.Autowired;
+import org.springframework.http.HttpStatus;
+import org.springframework.http.ResponseEntity;
 import org.springframework.stereotype.Service;
 
 import java.util.ArrayList;
@@ -16,12 +18,33 @@ public class QuestionServiceImpl implements QuestionService {
     private QuestionDao questionDao;
 
     @Override
-    public List<Question> getAllQuestions() {
-        return questionDao.findAll();
+    public ResponseEntity<List<Question>> getAllQuestions() {
+        try {
+            return new ResponseEntity<>(questionDao.findAll(), HttpStatus.OK);
+        } catch (Exception e) {
+            e.printStackTrace();
+        }
+        return new ResponseEntity<>(new ArrayList(), HttpStatus.BAD_REQUEST);
     }
 
     @Override
-    public List<Question> getAllQuestionsByCategory(String category) {
-        return questionDao.findByCategory(category);
+    public ResponseEntity<List<Question>> getAllQuestionsByCategory(String category) {
+        try {
+            return new ResponseEntity<>(questionDao.findByCategory(category), HttpStatus.OK);
+        } catch (Exception e) {
+            e.printStackTrace();
+        }
+        return new ResponseEntity<>(new ArrayList(), HttpStatus.BAD_REQUEST);
+    }
+
+    @Override
+    public ResponseEntity<Boolean> addQuestion(Question question) {
+        try {
+            questionDao.save(question);
+        } catch (Exception e) {
+            e.printStackTrace();
+            return new ResponseEntity<>(false, HttpStatus.BAD_REQUEST);
+        }
+        return new ResponseEntity<>(true, HttpStatus.CREATED);
     }
 }
