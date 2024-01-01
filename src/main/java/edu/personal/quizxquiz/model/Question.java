@@ -1,4 +1,4 @@
-package edu.personal.quizxquiz.entity;
+package edu.personal.quizxquiz.model;
 
 import jakarta.persistence.*;
 import lombok.Data;

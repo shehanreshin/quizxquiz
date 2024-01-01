@@ -1,6 +1,6 @@
 package edu.personal.quizxquiz.service;
 
-import edu.personal.quizxquiz.entity.Question;
+import edu.personal.quizxquiz.model.Question;
 import org.springframework.http.ResponseEntity;
 
 import java.util.List;

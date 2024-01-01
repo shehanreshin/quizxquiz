@@ -1,10 +1,8 @@
 package edu.personal.quizxquiz.controller;
 
-import edu.personal.quizxquiz.dao.QuestionDao;
-import edu.personal.quizxquiz.entity.Question;
+import edu.personal.quizxquiz.model.Question;
 import edu.personal.quizxquiz.service.QuestionService;
 import org.springframework.beans.factory.annotation.Autowired;
-import org.springframework.http.HttpStatus;
 import org.springframework.http.ResponseEntity;
 import org.springframework.web.bind.annotation.*;
 
@@ -17,7 +15,7 @@ public class QuestionController {
     @Autowired
     private QuestionService questionService;
 
-    @RequestMapping("all-questions")
+    @RequestMapping("all")
     public ResponseEntity<List<Question>> getAllQuestions() {
         return questionService.getAllQuestions();
     }

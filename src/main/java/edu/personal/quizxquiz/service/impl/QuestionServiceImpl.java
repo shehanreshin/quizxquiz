@@ -1,7 +1,7 @@
 package edu.personal.quizxquiz.service.impl;
 
 import edu.personal.quizxquiz.dao.QuestionDao;
-import edu.personal.quizxquiz.entity.Question;
+import edu.personal.quizxquiz.model.Question;
 import edu.personal.quizxquiz.service.QuestionService;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.http.HttpStatus;
@@ -24,7 +24,7 @@ public class QuestionServiceImpl implements QuestionService {
         } catch (Exception e) {
             e.printStackTrace();
         }
-        return new ResponseEntity<>(new ArrayList(), HttpStatus.BAD_REQUEST);
+        return new ResponseEntity<>(new ArrayList<>(), HttpStatus.BAD_REQUEST);
     }
 
     @Override
@@ -34,7 +34,7 @@ public class QuestionServiceImpl implements QuestionService {
         } catch (Exception e) {
             e.printStackTrace();
         }
-        return new ResponseEntity<>(new ArrayList(), HttpStatus.BAD_REQUEST);
+        return new ResponseEntity<>(new ArrayList<>(), HttpStatus.BAD_REQUEST);
     }
 
     @Override
