@@ -1,0 +1,8 @@
+spring:
+  datasource:
+    url: jdbc:mysql://localhost:3306/quizxquiz
+    username: root
+    password: thisisnotasecurepassword
+  jpa:
+    hibernate:
+      ddl-auto: update
