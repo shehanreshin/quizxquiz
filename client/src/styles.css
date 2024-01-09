@@ -1,4 +1,11 @@
 /* You can add global styles to this file, and also import other style files */
 :root {
-    --primary: #0d6efd;
+    --primary: #008376;
+    --dark: #2c313c;
+    --white: #faf9f3;
+}
+
+button {
+    background-color: var(--primary) !important;
+    color: var(--white) !important;
 }
