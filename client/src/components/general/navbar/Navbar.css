@@ -1,0 +1,15 @@
+.nav-link {
+  color: var(--bg-primary) !important;
+}
+
+.link-body-emphasis span {
+  color: var(--bg-dark);
+}
+
+.link-body-emphasis:hover span {
+  color: var(--bg-dark-light);
+}
+
+nav {
+  background-color: var(--bg-light);
+}

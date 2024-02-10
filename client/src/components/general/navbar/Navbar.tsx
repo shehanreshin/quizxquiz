@@ -1,60 +1,58 @@
+import './Navbar.css';
+import styles from './Navbar.module.css';
+
 function Navbar() {
     return (
         <>
-            <div className="col-3 p-0 h-100">
-                <div className="d-flex flex-column flex-shrink-0 p-3 bg-body-tertiary h-100">
-                    <a href="/" className="d-flex align-items-center mb-3 mb-md-0 me-md-auto link-body-emphasis text-decoration-none">
-                        <svg className="bi pe-none me-2" width="40" height="32"></svg>
-                        <span className="fs-4">Sidebar</span>
+            <div className="col-2 p-0 h-100 pt-3">
+                <nav className="d-flex flex-column flex-shrink-0 p-3 h-100">
+                    <a href="/" className="d-flex align-items-center mb-3 mb-md-0 me-md-auto link-body-emphasis text-decoration-none ps-4">
+                        <img src="/img/general/logo.svg" className="img w-75" />
                     </a>
-                    <hr />
-                    <ul className="nav nav-pills flex-column mb-auto">
-                        <li className="nav-item">
-                            <a href="#" className="nav-link active" aria-current="page">
+                    <ul className="nav nav-pills flex-column mt-5 mb-auto fw-medium">
+                        <li className="nav-item mb-4">
+                            <a href="#" className="nav-link" aria-current="page">
                                 <svg className="bi pe-none me-2" width="16" height="16"></svg>
                                 Home
                             </a>
                         </li>
                         <li>
+                            <div className="pe-3 ps-4 mb-2 nav-title">
+                                <span className={`${styles['nav-section-title']} ps-3`}>WORKSPACE</span>
+                            </div>
+                        </li>
+                        <li>
                             <a href="#" className="nav-link link-body-emphasis">
                                 <svg className="bi pe-none me-2" width="16" height="16"></svg>
-                                Dashboard
+                                <span>My presentations</span>
+                            </a>
+                        </li>
+                        <li>
+                            <a href="#" className="nav-link link-body-emphasis mb-5">
+                                <svg className="bi pe-none me-2" width="16" height="16"></svg>
+                                <span>Shared with me</span>
                             </a>
                         </li>
                         <li>
                             <a href="#" className="nav-link link-body-emphasis">
                                 <svg className="bi pe-none me-2" width="16" height="16"></svg>
-                                Orders
+                                <span>Templates</span>
                             </a>
                         </li>
                         <li>
                             <a href="#" className="nav-link link-body-emphasis">
                                 <svg className="bi pe-none me-2" width="16" height="16"></svg>
-                                Products
+                                <span>Help & support</span>
                             </a>
                         </li>
                         <li>
                             <a href="#" className="nav-link link-body-emphasis">
                                 <svg className="bi pe-none me-2" width="16" height="16"></svg>
-                                Customers
+                                <span>Trash</span>
                             </a>
                         </li>
                     </ul>
-                    <hr />
-                    <div className="dropdown">
-                        <a href="#" className="d-flex align-items-center link-body-emphasis text-decoration-none dropdown-toggle" data-bs-toggle="dropdown" aria-expanded="false">
-                            <img src="https://github.com/mdo.png" alt="" width="32" height="32" className="rounded-circle me-2" />
-                            <strong>mdo</strong>
-                        </a>
-                        <ul className="dropdown-menu text-small shadow">
-                            <li><a className="dropdown-item" href="#">New project...</a></li>
-                            <li><a className="dropdown-item" href="#">Settings</a></li>
-                            <li><a className="dropdown-item" href="#">Profile</a></li>
-                            <li><hr className="dropdown-divider" /></li>
-                            <li><a className="dropdown-item" href="#">Sign out</a></li>
-                        </ul>
-                    </div>
-                </div>
+                </nav>
             </div>
         </>
     );

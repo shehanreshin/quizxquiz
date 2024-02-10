@@ -1,0 +1,10 @@
+:root {
+  --bg-white: #f7f7f7 !important;
+  --bg-primary: #008376 !important;
+  --bg-dark: #101834 !important;
+  --bg-dark-light: #000000bf !important;
+
+  --txt-primary: #008376 !important;
+  --txt-dark: #101834 !important;
+  --txt-dark-light: #000000bf !important;
+}
