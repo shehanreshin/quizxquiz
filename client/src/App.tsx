@@ -1,6 +1,7 @@
 import Navbar from './components/general/navbar/Navbar';
 import { BsSearch } from "react-icons/bs";
 import SearchBar from './components/general/search-bar/SearchBar';
+import ParticipantStatsBar from './components/general/participant-stats-bar/ParticipantStatsBar';
 
 function App() {
   return (
@@ -11,7 +12,7 @@ function App() {
           <div className='col pt-4'>
             <div className='d-flex justify-content-end'>
               <SearchBar />
-              <div>Hello</div>
+              <ParticipantStatsBar />
               <div>Hello</div>
             </div>
           </div>
