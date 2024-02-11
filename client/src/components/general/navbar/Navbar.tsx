@@ -28,6 +28,12 @@ function Navbar() {
                             </a>
                         </li>
                         <li>
+                            <a href="#" className="nav-link link-body-emphasis">
+                                <svg className="bi pe-none me-2" width="16" height="16"></svg>
+                                <span>My quizzes</span>
+                            </a>
+                        </li>
+                        <li>
                             <a href="#" className="nav-link link-body-emphasis mb-5">
                                 <svg className="bi pe-none me-2" width="16" height="16"></svg>
                                 <span>Shared with me</span>

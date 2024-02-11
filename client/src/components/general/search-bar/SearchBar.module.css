@@ -1,0 +1,14 @@
+.input-field {
+  outline: none;
+  font-size: 14px;
+}
+
+.input-container {
+  border: 2px solid var(--dark-light);
+  width: 30%;
+}
+
+.input-container:focus-within,
+.input-container:hover {
+  border-color: var(--primary);
+}
