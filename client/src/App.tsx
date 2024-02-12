@@ -12,9 +12,9 @@ function App() {
           <Navbar />
           <div className='col pt-4'>
             <div className='d-flex justify-content-end'>
-              <SearchBar />
-              <ParticipantStatsBar />
-              <ProfileButton />
+              <SearchBar style={{ marginRight: '3rem' }} />
+              <ParticipantStatsBar style={{ marginRight: '1rem' }} />
+              <ProfileButton style={{ marginRight: '1rem' }} />
             </div>
           </div>
         </div>
