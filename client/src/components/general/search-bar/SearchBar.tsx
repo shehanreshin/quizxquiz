@@ -13,7 +13,7 @@ function SearchBar() {
                 <div className="w-100">
                     <input className={`${styles['input-field']} border-0 w-100`} type="text" placeholder="Search presentations, quizzes and folders" onChange={(event) => setSearchText(event.target.value)} value={searchText} />
                 </div>
-                {searchText.length > 0 && <IoMdClose onClick={() => setSearchText('')} style={{ cursor: 'pointer', color: 'var(--dark)' }} />}
+                {searchText.length > 0 && <IoMdClose className={styles['btn-clear']} onClick={() => setSearchText('')} />}
             </div>
         </>
     );
