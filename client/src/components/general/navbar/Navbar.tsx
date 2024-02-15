@@ -4,7 +4,7 @@ import styles from './Navbar.module.css';
 function Navbar() {
     return (
         <>
-            <div className="col-2 p-0 h-100 pt-3">
+            <div className="p-0 h-100 pt-3" style={{ width: '270px' }}>
                 <nav className="d-flex flex-column flex-shrink-0 p-3 h-100">
                     <a href="/" className="d-flex align-items-center mb-3 mb-md-0 me-md-auto link-body-emphasis text-decoration-none ps-4">
                         <img src="/img/general/logo.svg" className="img w-75" />
