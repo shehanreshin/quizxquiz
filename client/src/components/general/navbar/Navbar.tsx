@@ -11,7 +11,7 @@ function Navbar() {
                     </a>
                     <ul className="nav nav-pills flex-column mt-5 mb-auto fw-medium">
                         <li className="nav-item mb-4">
-                            <a href="#" className="nav-link" aria-current="page">
+                            <a href="#" className="nav-link nav-active" aria-current="page">
                                 <span className='ps-4'>Home</span>
                             </a>
                         </li>
