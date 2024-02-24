@@ -1,10 +1,11 @@
 import { SlOptions } from "react-icons/sl";
+import styles from './PresentationCard.module.css';
 
 export default function PresentationCard() {
     return (
         <>
-            <div className="w-100 h-100">
-                <div className="h-75 border border-2 rounded-2 p-1 mb-3" style={{
+            <div className={`${styles['presentation-card']} w-100 h-100`} style={{ cursor: 'pointer' }}>
+                <div className={`${styles['top-card']} h-75 border border-2 rounded-2 p-1 mb-3`} style={{
                     borderColor: 'var(--dark-light)'
                 }}>
                     <div className="d-flex justify-content-end">
@@ -17,10 +18,10 @@ export default function PresentationCard() {
                 </div>
                 <div className="d-flex justify-content-between">
                     <div className="w-100 me-2">
-                        <div className="rounded-2">Untitled presentation</div>
-                        <div className="rounded-2" style={{ color: 'var(--dark-light)' }}>Edited Jan 3, 2024</div>
+                        <div className={`${styles['presentation-title']} rounded-2`}>Untitled presentation</div>
+                        <div className={`${styles['presentation-edit-date']} rounded-2`} style={{ color: 'var(--dark-light)' }}>Edited Jan 3, 2024</div>
                     </div>
-                    <div>
+                    <div className={styles['options-icon']}>
                         <SlOptions className="fs-5" />
                     </div>
                 </div>
