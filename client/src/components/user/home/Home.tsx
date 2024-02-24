@@ -2,6 +2,7 @@ import ParticipantStatsBar from "../../general/participant-stats-bar/Participant
 import ProfileButton from "../../general/profile-button/ProfileButton";
 import SearchBar from "../../general/search-bar/SearchBar";
 import NewXButton from "./NewXButton/NewXButton";
+import PresentationCard from "./PresentationCard/PresentationCard";
 
 function Home() {
     return (
@@ -17,7 +18,12 @@ function Home() {
                     <NewXButton text="New quiz" active={true} style={{ marginRight: '1rem' }} />
                     <NewXButton text="New presentation" />
                 </div>
-                <div className="fs-6">Recently viewed</div>
+                <div className="fs-6 fw-medium mb-4">Recently viewed</div>
+                <div className="row w-100">
+                    <div className="col-4" style={{ height: '35vh' }}>
+                        <PresentationCard />
+                    </div>
+                </div>
             </div>
         </>
     );
