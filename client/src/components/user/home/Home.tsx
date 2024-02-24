@@ -20,7 +20,7 @@ function Home() {
                 </div>
                 <div className="fs-6 fw-medium mb-4">Recently viewed</div>
                 <div className="row w-100">
-                    <div className="col-4" style={{ height: '35vh' }}>
+                    <div className="col-4" style={{ height: '42vh' }}>
                         <PresentationCard />
                     </div>
                 </div>
