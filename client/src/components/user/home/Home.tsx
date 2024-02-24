@@ -19,9 +19,12 @@ function Home() {
                     <NewXButton text="New presentation" />
                 </div>
                 <div className="fs-6 fw-medium mb-4">Recently viewed</div>
-                <div className="row w-100">
+                <div className="row w-100 gx-3">
                     <div className="col-4" style={{ height: '42vh' }}>
                         <PresentationCard question="Which one of these characters does not have conqueror's haki?" title="Untitled presentation" editedDate="Feb 24, 2024" />
+                    </div>
+                    <div className="col-4" style={{ height: '42vh' }}>
+                        <PresentationCard question="Which one of these characters is not in the Death Note manga?" title="Manga Quiz" editedDate="Jan 11, 2024" />
                     </div>
                 </div>
             </div>
