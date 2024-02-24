@@ -1,0 +1,23 @@
+.options-icon {
+  opacity: 0;
+}
+
+.top-card:hover * {
+  opacity: 0.6;
+}
+
+.presentation-card * {
+  transition: 0.15s ease-in-out;
+}
+
+.presentation-card:hover .options-icon {
+  opacity: 1;
+}
+
+.presentation-title:hover {
+  color: var(--dark-light);
+}
+
+.presentation-edit-date:hover {
+  color: var(--dark-lighter-dark) !important;
+}

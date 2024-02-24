@@ -1,0 +1,27 @@
+.input-field {
+  outline: none;
+  font-size: 14px;
+}
+
+.input-container {
+  border: 2px solid var(--dark-light);
+  width: 30%;
+  min-width: 370px;
+}
+
+.input-container:focus-within,
+.input-container:hover {
+  border-color: var(--primary);
+}
+
+.btn-clear {
+  cursor: pointer;
+  color: var(--dark);
+  animation: animationRotate 0.4s ease-out;
+}
+
+@keyframes animationRotate {
+  100% {
+    transform: rotate(180deg);
+  }
+}

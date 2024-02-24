@@ -1,0 +1,19 @@
+nav * {
+  transition: 0.1s ease-out;
+}
+
+.nav-active span {
+  color: var(--primary) !important;
+}
+
+.link-body-emphasis span {
+  color: var(--dark);
+}
+
+.link-body-emphasis:hover span {
+  color: var(--dark-light);
+}
+
+nav {
+  background-color: var(--light);
+}
