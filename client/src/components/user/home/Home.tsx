@@ -21,7 +21,7 @@ function Home() {
                 <div className="fs-6 fw-medium mb-4">Recently viewed</div>
                 <div className="row w-100">
                     <div className="col-4" style={{ height: '42vh' }}>
-                        <PresentationCard />
+                        <PresentationCard question="Which one of these characters does not have conqueror's haki?" title="Untitled presentation" editedDate="Feb 24, 2024" />
                     </div>
                 </div>
             </div>
